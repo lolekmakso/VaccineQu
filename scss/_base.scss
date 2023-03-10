@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0 20px;
+  margin-inline: auto;
+}
+
+.btn {
+  background: $orange;
+  display: inline-block;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  @include text($ff, 16px, 18px, 400, $white);
+  padding: 15px 28px;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: $transition;
+}
+
+.title {
+  @include text($ff, 24px, 28px, 500, $text);
+}
+
+.icon {
+  padding: 11px;
+  background: $pink;
+  border-radius: 10px;
+}

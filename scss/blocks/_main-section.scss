@@ -1,0 +1,137 @@
+.health {
+  display: flex;
+  gap: 228px;
+  margin-top: 93px;
+  margin-bottom: 41px;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    @include text($ff, 48px, 64px, 500, $text);
+    margin-bottom: 16px;
+    max-width: 391px;
+  }
+
+  &__desc {
+    @include text($ff, 14px, 32px, 400, $grey);
+    max-width: 410px;
+    margin-bottom: 32px;
+  }
+
+  &__btn {
+    display: flex;
+    gap: 16px;
+
+    .btn_vaccine {
+      padding: 15px 22px;
+      box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
+
+      &:hover {
+        background: $white;
+        color: $orangegray;
+        border: 1px solid $orangegray;
+      }
+    }
+
+    .btn_learn {
+      color: $orange;
+      background: $white;
+      border: 1px solid $orange;
+
+      &:hover {
+        color: $grey;
+        border: 1px solid $grey;
+      }
+    }
+  }
+
+  &__img {
+    display: grid;
+    gap: 21px;
+    grid-template-areas:
+      "square1 square2 rectangle"
+      "square3 square4 rectangle";
+  }
+}
+
+.square1 {
+  grid-area: square1;
+}
+
+.square2 {
+  grid-area: square2;
+}
+
+.rectangle {
+  grid-area: rectangle;
+}
+
+.square3 {
+  grid-area: square3;
+}
+
+.square4 {
+  grid-area: square4;
+}
+
+.making {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 80px;
+
+  &-card__first{
+    background: $white;
+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+        
+    .making-card__text{
+        padding: 24px 33px 40px 111px;
+       }
+
+    a {
+        color: $orange;
+        background: $white;
+        border: 1px solid $orange;
+        border-radius: 30px;
+        padding: 12px 24px;
+        margin: 0 68px 28px 54px;
+
+        &:hover {
+          color: $grey;
+          border: 1px solid $grey;
+        }
+    }
+  }
+
+  &-card {
+    padding: 24px 31px 30px 111px;
+    background: $white;
+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+
+    &__title {
+      @include text($ff, 18px, 21px, 500, $text);
+      margin-bottom: 10px;
+    }
+
+    &__desc {
+      @include text($ff, 12px, 14px, 400, $grey);
+      max-width: 101px;
+    }
+  }
+}
+
+.making__container{
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+}
+
+.making__img{
+    margin-bottom: 20px;
+    padding-left: 293px;
+}

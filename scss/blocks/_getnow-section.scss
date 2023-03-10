@@ -1,0 +1,48 @@
+.getnow__title {
+  margin-top: 106px;
+  margin-bottom: 16px;
+}
+
+.getnow__desc {
+  margin-bottom: 33px;
+  max-width: 480px;
+  @include text($ff, 16px, 40px, 400, $grey);
+}
+
+.getnow__form {
+  padding: 0 32px 38px;
+  box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.getnow__form__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 48px;
+
+  .field {
+    width: 100%;
+  }
+
+  .field__input, .field__select {
+    margin-left: 0;
+    max-width: 375px;
+  }
+
+  .field__title {
+    margin-top: 32px;
+    margin-bottom: 14px;
+    @include text($ff, 18px, 21px, 400, $text);
+  }
+}
+
+.btn_getnow {
+  display: flex;
+  margin-inline: auto;
+
+  &:hover{
+    background: $white;
+    color: $orange;
+    border: 1px solid $orange;
+  }
+}

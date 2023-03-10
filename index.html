@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Ubuntu:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <title>VaccineQu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a class="header__logo" href="#"><span>Vaccine</span>Qu</a>
+        <nav class="nav">
+          <ul class="nav__ul" id="headerUl">
+            <li class="nav__li"><a href="#" class="nav__a">Home</a></li>
+            <li class="nav__li"><a href="#" class="nav__a">Schedule</a></li>
+            <li class="nav__li"><a href="#" class="nav__a">Quota</a></li>
+            <li class="nav__li"><a href="#" class="nav__a">Information</a></li>
+            <span
+              class="material-symbols-outlined"
+              id="close"
+              onclick="navToggle()"
+            >
+              close
+            </span>
+          </ul>
+
+          <a href="#" class="btn btn_call">Call Center</a>
+          <div class="header__burger">
+            <span class="material-symbols-outlined" onclick="navToggle()">
+              menu
+            </span>
+          </div>
+        </nav>
+      </header>
+
+      <section class="main-section">
+        <div class="main-section__health health">
+          <div class="health__text">
+            <div class="health__title">Get Your Vaccine, Get Your Health</div>
+            <div class="health__desc">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour
+            </div>
+            <div class="health__btn">
+              <a href="#" class="btn btn_vaccine">Get Your Vaccine</a>
+              <a href="#" class="btn btn_learn">Learn more</a>
+            </div>
+          </div>
+          <div class="health__img">
+            <img class="square1" src="img/square.png" alt="square" />
+            <img class="square2" src="img/square.png" alt="square" />
+            <img class="rectangle" src="img/rectangle.png" alt="rectangle" />
+            <img class="square3" src="img/square.png" alt="square" />
+            <img class="square4" src="img/square.png" alt="square" />
+          </div>
+        </div>
+
+        <div class="making">
+          <div class="making__container">
+            <div class="making-card__first">
+              <div class="making-card__text">
+                <div class="making-card__title">Sinovac</div>
+                <div class="making-card__desc">Necessary making this</div>
+              </div>
+              <a href="#" class="btn btn_vaccine">Get Vaccine</a>
+            </div>
+
+            <div class="making-card">
+              <div class="making-card__title">Astrazeneca</div>
+              <div class="making-card__desc">Necessary making this</div>
+            </div>
+
+            <div class="making-card">
+              <div class="making-card__title">Sinopahrm</div>
+              <div class="making-card__desc">Necessary making this</div>
+            </div>
+          </div>
+          <div class="making__img">
+            <img src="img/points.png" alt="points" />
+          </div>
+        </div>
+      </section>
+
+      <section class="schedule-section">
+        <ul class="schedule__ul">
+          <li class="schedule__li">
+            <a href="#" class="schedule__a">VACCINESIN</a>
+          </li>
+          <li class="schedule__li">
+            <a href="#" class="schedule__a">AstraVac</a>
+          </li>
+          <li class="schedule__li">
+            <a href="#" class="schedule__a">HealthVaccine</a>
+          </li>
+          <li class="schedule__li">
+            <a href="#" class="schedule__a">SimpAcine</a>
+          </li>
+        </ul>
+        <div class="schedule__title title">Schedule Vaccination</div>
+        <div class="schedule__form">
+          <label class="field">
+            <div class="field__title">
+              <img class="icon" src="img/schedule_icons/icon1.png" alt="icon" />
+              <span class="field__text">Location</span>
+            </div>
+            <input
+              class="field__input"
+              type="text"
+              placeholder="Jakarta, Indonesia"
+            />
+          </label>
+          <label class="field">
+            <div class="field__title">
+              <img class="icon" src="img/schedule_icons/icon2.png" alt="icon" />
+              <span class="field__text">Date</span>
+            </div>
+            <input
+              class="field__input"
+              type="date"
+              placeholder="25 June, 2021"
+            />
+          </label>
+          <label class="field">
+            <div class="field__title">
+              <img class="icon" src="img/schedule_icons/icon3.png" alt="icon" />
+              <span class="field__text">Vaccine Type</span>
+            </div>
+            <input class="field__input" type="text" placeholder="Cinovac" />
+          </label>
+          <button class="btn btn_find" type="submit">Find</button>
+        </div>
+      </section>
+
+      <section class="important-section">
+        <div class="important-section__title title">
+          Why Vaccine Is Important?
+        </div>
+        <div class="important-section__desc">
+          Combined with a handful of model sentence structures, to generate
+          always free from repetition injected.
+        </div>
+        <div class="important">
+          <div class="important__card">
+            <img class="icon" src="img/important_icons/icon1.png" alt="icon" />
+            <div class="important__title">Prevent covid 19 virus</div>
+            <div class="important__desc">
+              Model sentence structures, to generate Lorem which looks
+              reasonable
+            </div>
+          </div>
+          <div class="important__card">
+            <img class="icon" src="img/important_icons/icon2.png" alt="icon" />
+            <div class="important__title">Protect others</div>
+            <div class="important__desc">
+              Model sentence structures, to generate Lorem which looks
+              reasonable
+            </div>
+          </div>
+          <div class="important__card">
+            <img class="icon" src="img/important_icons/icon3.png" alt="icon" />
+            <div class="important__title">Stop the spread of covid 19</div>
+            <div class="important__desc">
+              Model sentence structures, to generate Lorem which looks
+              reasonable
+            </div>
+          </div>
+          <div class="important__card">
+            <img class="icon" src="img/important_icons/icon4.png" alt="icon" />
+            <div class="important__title">Protect the next generation</div>
+            <div class="important__desc">
+              Model sentence structures, to generate Lorem which looks
+              reasonable
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="getnow-section">
+        <div class="getnow__title title">Get Vaccine Now</div>
+        <div class="getnow__desc">
+          Combined with a handful of model sentence structures, generate always
+          free from repetition injected.
+        </div>
+        <form class="getnow__form">
+          <div class="getnow__form__container">
+            <label class="field">
+              <span class="field__title">Full Name</span>
+              <input
+                class="field__input"
+                type="text"
+                placeholder="Enter your name"
+              />
+            </label>
+            <label class="field">
+              <span class="field__title">Email or phone number</span>
+              <input
+                class="field__input"
+                type="text"
+                placeholder="Enter your email or number"
+              />
+            </label>
+            <label class="field">
+              <span class="field__title">Address</span>
+              <input
+                class="field__input"
+                type="text"
+                placeholder="Full your Address"
+              />
+            </label>
+            <label class="field">
+              <span class="field__title">Disease history</span>
+              <input
+                class="field__input"
+                type="text"
+                placeholder="Enter diese history"
+              />
+            </label>
+            <label class="field">
+                <span class="field__title">Level Vaccination</span>
+                <select class="field__select" placeholder="Choose Level">
+                    <option value="English">0</option>
+                    <option value="English">1</option>
+                    <option value="Ukraine">2</option>
+                    <option value="Spanish">3</option>
+                    <option value="Spanish">4</option>
+                    <option value="Spanish">5</option>
+                </select>
+              </label>
+            <label class="field">
+              <span class="field__title">Near Vaccination Location</span>
+              <input
+                class="field__input"
+                type="text"
+                placeholder="Indonesia"
+              />
+            </label>
+          </div>
+          <button class="btn btn_getnow" type="submit">Vaccine Now</button>
+        </form>
+      </section>
+
+      <section class="emergency-section"></section>
+
+      <footer></footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

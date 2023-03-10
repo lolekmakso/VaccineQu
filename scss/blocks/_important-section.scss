@@ -1,0 +1,31 @@
+.important-section__title {
+  margin-bottom: 16px;
+}
+
+.important-section__desc {
+  margin-bottom: 67px;
+  max-width: 495px;
+  @include text($ff, 16px, 40px, 400, $grey);
+}
+
+.important {
+  display: grid;
+  padding: 0 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.important__card {
+  img {
+    margin-bottom: 16px;
+  }
+}
+
+.important__title {
+  margin-bottom: 16px;
+  @include text($ff, 18px, 21px, 400, $text);
+}
+
+.important__desc {
+  @include text($ff, 14px, 24px, 400, $grey);
+  max-width: 200px;
+}
