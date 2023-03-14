@@ -3,6 +3,7 @@
   gap: 228px;
   margin-top: 93px;
   margin-bottom: 41px;
+  justify-content: center;
 
   &__text {
     display: flex;
@@ -80,30 +81,31 @@
 
 .making {
   display: flex;
+  justify-content: center;
   align-items: flex-end;
   margin-bottom: 80px;
 
-  &-card__first{
+  &-card__first {
     background: $white;
     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
     border-radius: 15px;
-        
-    .making-card__text{
-        padding: 24px 33px 40px 111px;
-       }
+
+    .making-card__text {
+      padding: 24px 33px 40px 111px;
+    }
 
     a {
-        color: $orange;
-        background: $white;
-        border: 1px solid $orange;
-        border-radius: 30px;
-        padding: 12px 24px;
-        margin: 0 68px 28px 54px;
+      color: $orange;
+      background: $white;
+      border: 1px solid $orange;
+      border-radius: 30px;
+      padding: 12px 24px;
+      margin: 0 68px 28px 54px;
 
-        &:hover {
-          color: $grey;
-          border: 1px solid $grey;
-        }
+      &:hover {
+        color: $grey;
+        border: 1px solid $grey;
+      }
     }
   }
 
@@ -125,13 +127,150 @@
   }
 }
 
-.making__container{
-    display: flex;
-    gap: 16px;
-    align-items: flex-end;
+.making__container {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
 }
 
-.making__img{
-    margin-bottom: 20px;
-    padding-left: 293px;
+.making__img {
+  margin-bottom: 20px;
+  padding-left: 293px;
+}
+
+@include desktop-small {
+  .health {
+    gap: 170px;
+
+    &__img {
+      grid-template-areas:
+        "square1 rectangle"
+        "square3 rectangle";
+
+      .square2,
+      .square4 {
+        display: none;
+      }
+
+      img {
+        max-width: 160px;
+      }
+    }
+  }
+
+  .making__img {
+    padding-left: 70px;
+  }
+}
+
+@include tablet {
+  .health {
+    gap: 70px;
+
+    &__title {
+      @include text($ff, 38px, 54px, 500, $text);
+      max-width: 350px;
+    }
+
+    &__desc {
+      max-width: 350px;
+    }
+  }
+
+  .btn_learn {
+    display: flex;
+    align-items: center;
+  }
+
+  .making__container {
+    gap: 50px;
+  }
+
+  .making__img {
+    display: none;
+  }
+
+  .making-card {
+    padding: 24px 31px 30px 31px;
+    background: $white;
+  }
+}
+
+@include tablet-small {
+  .health {
+    gap: 40px;
+
+    &__img {
+      grid-template-areas:
+        "square1"
+        "square3";
+
+      .square2,
+      .square4,
+      .rectangle {
+        display: none;
+      }
+    }
+  }
+
+  .making__container {
+    gap: 16px;
+  }
+
+  .making-card__first {
+    .making-card__text {
+      padding: 24px 31px 40px 31px;
+    }
+    a{
+      padding: 12px 24px;
+      margin: 0 30px 28px 30px;
+    }
+  }
+}
+
+
+@include mobile{
+  .health {
+    display: grid;
+    text-align: center;
+
+
+    &__btn{
+      display: flex;
+      justify-content: center;
+    }
+
+    &__img {
+      grid-template-areas:
+        "square1"
+        "square3";
+
+      .square2,
+      .square4,
+      .rectangle,
+      .square1,
+      .square3 {
+        display: none;
+      }
+    }
+  }
+
+  .making__container {
+     flex-direction: column;
+     align-items: center;
+  }
+
+  .making-card__first{
+    width: 300px;
+    text-align: center;
+   }
+
+   .making-card{
+    width: 300px;
+    text-align: center;
+
+    &__desc {
+      max-width:none;
+    }
+   }
 }

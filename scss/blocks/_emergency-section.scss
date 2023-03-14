@@ -1,0 +1,89 @@
+.emergency-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 118px;
+  margin-top: 80px;
+  margin-bottom: 120px;
+
+  img {
+    width: 100%;
+
+    @include desktop-mini {
+      max-width: 480px;
+    }
+  }
+
+  @include desktop-mini {
+    gap: 69px;
+  }
+}
+
+.contact__title {
+  @include text($ff, 24px, 28px, 500, $text);
+  margin-bottom: 31px;
+}
+
+.contact__desc {
+  @include text($ff, 16px, 32px, 400, $grey);
+  margin-bottom: 32px;
+  max-width: 480px;
+}
+
+.contact__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contact__card {
+  display: flex;
+  gap: 16px;
+  max-width: 276px;
+  padding: 24px 25px 17px;
+  box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+
+  &__title {
+    @include text($ff, 16px, 18px, 500, $text);
+    margin-bottom: 8px;
+  }
+
+  &__desc {
+    @include text($ff, 16px, 18px, 400, $grey);
+    margin-bottom: 13px;
+    white-space: nowrap;
+  }
+
+  .btn_emergency {
+    width: 164px;
+    padding-top: 12px;
+    padding-bottom: 11px;
+
+    &:hover {
+      background: $white;
+      color: $orange;
+      border: 1px solid $orange;
+    }
+  }
+}
+
+@include desktop-small {
+  .emergency-section {
+    img {
+      display: none;
+    }
+  }
+}
+
+@include mobile {
+  .contact__info {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .contact__card{
+    width: 100%;
+    padding: 15px 40px;
+  }
+}

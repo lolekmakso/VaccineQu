@@ -6,6 +6,12 @@
     color: $color;
 }
 
+@mixin desktop-mini {
+  @media (max-width: $desktop-mini) {
+    @content;
+  }
+}
+
 @mixin desktop-small {
     @media (max-width: $desktop-small) {
       @content;

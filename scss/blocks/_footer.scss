@@ -1,0 +1,51 @@
+.footer {
+  display: flex;
+  gap: 130px;
+  margin-bottom: 75px;
+
+  &__vaccine {
+    max-width: 358px;
+  }
+
+  &__title {
+    @include text($ff, 24px, 28px, 500, $text);
+    margin-bottom: 16px;
+  }
+
+  &__desc {
+    margin-top: 16px;
+    @include text($ff, 16px, 32px, 400, $grey);
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+   
+
+    a{
+        @include text($ff, 16px, 32px, 400, $grey);
+        transition: $transition;
+
+        &:hover{
+            color: $orange;
+        }
+    }
+  }
+}
+
+@include desktop-small{
+
+  .footer{
+    justify-content: center;
+
+    &__vaccine{
+      display: none;
+    }
+  }
+}
+
+@include tablet-small{
+  .footer__contact{
+    display: none;
+  }
+}

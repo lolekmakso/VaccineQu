@@ -40,6 +40,11 @@ li {
   border: 1px solid transparent;
   border-radius: 10px;
   transition: $transition;
+
+  @include tablet {
+    @include text($ff, 14px, 16px, 400, $white);
+    padding: 10px 18px;
+  }
 }
 
 .title {
@@ -50,4 +55,9 @@ li {
   padding: 11px;
   background: $pink;
   border-radius: 10px;
+}
+
+.field__input:focus,
+.field__select:focus {
+  background: #eae4e4;
 }

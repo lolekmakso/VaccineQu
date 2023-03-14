@@ -17,6 +17,7 @@
 
 .getnow__form__container {
   display: grid;
+  gap: 15px;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 48px;
 
@@ -44,5 +45,33 @@
     background: $white;
     color: $orange;
     border: 1px solid $orange;
+  }
+}
+
+@include desktop-small{
+  .getnow__form__container {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+    .field{
+      display: flex;
+      align-items: center;
+    }
+
+    .field__select{
+      width: inherit;
+    }
+
+    .field__input{
+      width: inherit;
+    }
+  }
+
+ 
+}
+
+@include mobile{
+  .getnow__form__container {
+    grid-template-columns: 1fr;
   }
 }

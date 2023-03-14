@@ -27,7 +27,8 @@
   @include text($ff, 18px, 21px, 400, $text);
 }
 
-.field__input, .field__select {
+.field__input,
+.field__select {
   margin-left: 56px;
   max-width: 225px;
   background: #fafafa;
@@ -59,11 +60,52 @@
     transition: $transition;
 
     &:hover {
-        color: $orangegray;
-      }
+      color: $orangegray;
+    }
   }
 }
 
-.schedule__title{
-    margin-bottom: 33px;
+.schedule__title {
+  margin-bottom: 33px;
+}
+
+@include desktop-small {
+  .schedule__ul {
+    gap: 45px;
+
+    a {
+      @include text("Mulish", 26px, 30px, 600, #abadad);
+    }
+  }
+
+  .schedule__form {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .btn_find {
+    max-width: 200px;
+  }
+}
+
+@include tablet-small{
+  .schedule__ul {
+    gap: 30px;
+
+    a {
+      font-size: 18px;
+    }
+  }
+
+  .schedule__form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@include mobile{
+  .schedule__ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
 }

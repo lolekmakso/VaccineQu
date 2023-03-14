@@ -10,6 +10,7 @@
 
 .important {
   display: grid;
+  gap: 15px;
   padding: 0 20px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -28,4 +29,22 @@
 .important__desc {
   @include text($ff, 14px, 24px, 400, $grey);
   max-width: 200px;
+}
+
+@include tablet{
+  .important {
+    grid-template-columns: 1fr 1fr;
+   justify-items: center;
+  }
+}
+
+@include mobile{
+  .important {
+    grid-template-columns: 1fr;
+
+
+    &__desc{
+      max-width: 400px;
+    }
+  }
 }
